@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/wdio wdio.conf.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,23 @@
   "bugs": {
     "url": "https://github.com/Haris-Dilgenta/wdio-mocha-playground/issues"
   },
-  "homepage": "https://github.com/Haris-Dilgenta/wdio-mocha-playground#readme"
+  "homepage": "https://github.com/Haris-Dilgenta/wdio-mocha-playground#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "@wdio/cli": "^6.1.15",
+    "@wdio/local-runner": "^6.1.14",
+    "@wdio/mocha-framework": "^6.1.14",
+    "@wdio/selenium-standalone-service": "^6.1.14",
+    "@wdio/spec-reporter": "^6.1.14",
+    "@wdio/sync": "^6.1.14",
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^1.0.0",
+    "chromedriver": "^83.0.0",
+    "selenium-standalone": "^6.17.0",
+    "wdio-chromedriver-service": "^6.0.3",
+    "webdriverio": "^6.1.14"
+  }
 }
