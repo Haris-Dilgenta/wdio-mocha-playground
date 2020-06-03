@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/wdio wdio.conf.js",
-    "testWithAllure":"./node_modules/.bin/wdio wdio-allure-report.conf.js && allure generate allure-results/ --clean && allure open"
+    "testWithAllure": "./node_modules/.bin/wdio wdio-allure-report.conf.js && allure generate allure-results/ --clean && allure open",
+    "testWithVideoReport":"./node_modules/.bin/wdio wdio-video-report.conf.js && allure generate allure-results/ --clean"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "chromedriver": "^83.0.0",
     "selenium-standalone": "^6.17.0",
     "wdio-chromedriver-service": "^6.0.3",
+    "wdio-video-reporter": "^2.0.1",
     "webdriverio": "^6.1.14"
   }
 }
